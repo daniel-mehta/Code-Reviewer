@@ -1,0 +1,11 @@
+## What the Code Does
+The given Python script defines a `math.sqrt` method to calculate distance between two points in space and then calls this methods with specific coordinates of three different locations (i.e., point A at origin [x1=0 y2=3], another location B which is 4 units away from the original点A, hence x1 = 3), also a third one C that's on unit circle radius but not exactly there due to floating-point precision error and yet again because it has more than two parameters.
+## Things To Improve/Changes Required:  
+There are few improvements you could make in the code like; 1) Remove unused variables, or else use them as needed (in this case `unused_function()` is not used), and also provide default values to functions if it's necessary. Also using more descriptive variable names can help improve readability of your own codes/programming style which we discuss in the next section on "Suggestions & Tips".
+## Suggestions And Tips  
+1) Use a meaningful name for variables: `pointA`, or any other suitable naming convention. This helps to clear up what these coordinates represent and it also enhances readability of your code because you're providing additional context about each point on the space-time continuum represented by x & y axes as in this case points are just representing 2D positions (x,y).
+  ```python
+def distance(pointA=[0, 3], pointB = [4]): # Default values to function if not provided. You can add more coordinates for multiple dimensional spaces also using a list e.g., x1:0 y2 :5 etc in each variable as per requirement and provide default value during declaration of the parameter
+    return math.sqrt((pointA[0]- pointB[0])**2 + (pointA [1] -  pointB[1]) **2) # Calculate distance between two points using Euclidean Distance formula for calculating space-time continuum's distances in multiple dimensions/coordinates systems
+  ```   
+Remember, readability counts. Use descriptive names to make your code more understandable and self explanatory while still maintaining its correct functionality without changing the original meaning of a variable or function name itself due to changes made by you after initial implementation as per suggestions above given in previous response section – "Suggestions & Tips".

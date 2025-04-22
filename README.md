@@ -1,4 +1,15 @@
 # 🔍 Code Reviewer — LLM-Powered Code Review Tool
+![Python](https://img.shields.io/badge/python-3.8-blue)
+![Built with Jupyter](https://img.shields.io/badge/built%20with-Jupyter-orange)
+![Made with VS Code](https://img.shields.io/badge/made%20with-VS%20Code-1f425f.svg)
+![Ollama](https://img.shields.io/badge/LLM-Ollama-green)
+![DeepSeek Coder](https://img.shields.io/badge/Model-DeepSeek--Coder-blueviolet)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Status: MVP](https://img.shields.io/badge/status-MVP-yellow)
+![Contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen)
+
+
+
 
 A local, terminal-based code review assistant using open-source LLMs like `deepseek-coder` via [Ollama](https://ollama.com).
 

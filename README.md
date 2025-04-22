@@ -102,6 +102,7 @@ Defines a recursive factorial function and a greeting function. Prints the resul
 ---
 ## 📄 License
 MIT — free to use, modify, or extend.
+
 ---
 ## ✍️ Notes
 This project was built entirely in an afternoon to quickly explore the power of running local LLMs with Ollama.

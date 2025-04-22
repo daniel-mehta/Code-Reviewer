@@ -2,5 +2,5 @@
 * text=auto
 
 # Exclude notebook from language stats
-main.ipynb linguist-vendored
+prototype.ipynb linguist-vendored
 

@@ -44,8 +44,8 @@ ollama run deepseek-coder
 
 ### 2. Clone this repo
 ```bash
-git clone https://github.com/YOUR_USERNAME/code-reviewer
-cd code-reviewer
+git clone https://github.com/daniel-mehta/Code-Reviewer
+cd Code-Reviewer
 ```
 
 ### 3. Run it

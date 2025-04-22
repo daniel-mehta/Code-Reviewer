@@ -1,4 +1,6 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Exclude notebook from language stats
 main.ipynb linguist-vendored
 

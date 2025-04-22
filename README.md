@@ -75,7 +75,7 @@ code-reviewer/
 ├── sample_scripts/      # Test code files
 ├── utils.py             # File loading, prompt building, saving
 ├── reviewer.py          # LLM call, review pipeline, CLI logic
-├── main.ipynb           # Prototype notebook (initial dev/testing)
+├── prototype.ipynb           # Prototype notebook (initial dev/testing)
 └── README.md            # You're here
 ```
 ---

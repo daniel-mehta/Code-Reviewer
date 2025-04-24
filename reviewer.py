@@ -49,4 +49,7 @@ if __name__ == "__main__":
     print("\n📝 Review Output:\n")
     print(result)
 
-    
+def run_review(code_str, mode="default"):
+    """Streamlit to call — builds prompt and returns LLM output."""
+    prompt = build_prompt(code_str, mode)
+    return call_model(prompt, model="deepseek-coder")

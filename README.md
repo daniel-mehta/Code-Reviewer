@@ -1,6 +1,7 @@
 # 🔍 Code Reviewer — LLM-Powered Code Review Tool
 ![Python](https://img.shields.io/badge/python-3.8-blue)
 ![Built with Jupyter](https://img.shields.io/badge/built%20with-Jupyter-orange)
+![Streamlit UI](https://img.shields.io/badge/UI-Streamlit-red)
 ![Made with VS Code](https://img.shields.io/badge/made%20with-VS%20Code-1f425f.svg)
 ![Ollama](https://img.shields.io/badge/LLM-Ollama-green)
 ![DeepSeek Coder](https://img.shields.io/badge/Model-DeepSeek--Coder-blueviolet)
@@ -13,7 +14,7 @@
 
 A local, terminal-based code review assistant using open-source LLMs like `deepseek-coder` via [Ollama](https://ollama.com).
 
-> 🛠️ Built in a single afternoon as a quick way to learn and implement Ollama with pre-trained local LLMs — fast, focused, and functional.
+> 🛠️ Backend built in a single afternoon to explore local LLMs with Ollama — the Streamlit frontend came a few days later for a smoother review experience.
 
 ---
 
@@ -27,6 +28,11 @@ A local, terminal-based code review assistant using open-source LLMs like `deeps
   - `## Suggestions`
 - 💾 Optionally saves to `.md` for sharing or documentation
 - 🔁 Modular design with selectable review modes
+- 🖥️ Web UI with Streamlit for file upload and output preview
+- 🔘 Dropdown to choose review mode (default, beginner, strict)
+- ✅ Checkbox to save markdown review
+
+
 
 ---
 
@@ -67,6 +73,28 @@ Follow the prompts to:
 - Select a file
 - Choose a review mode
 - Save the output (or just print it)
+
+### 4. Front End
+
+Prefer using a web interface instead of the terminal?
+
+Install Streamlit (if you haven't yet)
+```bash
+pip install streamlit
+```
+
+Run the Streamlit app:
+```bash
+streamlit run app.py
+```
+Then:
+- Upload a .py or .txt file
+- Select a review mode (default, beginner_friendly, strict)
+- View structured markdown output in your browser
+- Optionally save the review to /reviews
+
+> 📄 See Code Reviewer PDF.pdf for a sample output & UI preview
+> 📸 Example UI Output (see below)
 ---
 ## 🗂 Project Structure
 ```bash
@@ -74,12 +102,20 @@ code-reviewer/
 ├── reviews/             # Saved markdown reviews
 ├── sample_scripts/      # Test code files
 ├── utils.py             # File loading, prompt building, saving
-├── reviewer.py          # LLM call, review pipeline, CLI logic
-├── prototype.ipynb      # Prototype notebook (initial dev/testing)
-└── README.md            # You're here
+├── reviewer.py          # Core logic (prompt, review, model)
+├── app.py               # Streamlit UI
+├── prototype.ipynb      # Initial dev/testing
+├── README.md            # You're here
+└── Code Reviewer PDF.pdf # Example UI + output
+
 ```
 ---
-## 🧪 Example Output
+## 📸 Screenshot
+
+![Code Reviewer PDF_page-0001](https://github.com/user-attachments/assets/563cc821-2347-483d-a960-87026b100072)
+
+---
+## 🧪 Example Output (Terminal Version)
 ```bash
 ## Summary
 Defines a recursive factorial function and a greeting function. Prints the result of both.
@@ -110,6 +146,7 @@ Defines a recursive factorial function and a greeting function. Prints the resul
 - deepseek-coder
 - Jupyter Notebook (prototype phase)
 - Visual Studio Code
+- Streamlit
 ---
 ## 📄 License
 MIT — free to use, modify, or extend.
